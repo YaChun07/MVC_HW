@@ -143,6 +143,7 @@
     <Compile Include="Models\AccountBookEntity.cs" />
     <Compile Include="Models\AccountBookViewModel.cs" />
     <Compile Include="Models\Enum\Category.cs" />
+    <Compile Include="Models\Service\AccountService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
