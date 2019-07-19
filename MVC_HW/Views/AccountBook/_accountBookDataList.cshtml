@@ -1,4 +1,7 @@
 ﻿@model  List<MVC_HW.Models.AccountBookViewModel>
+@{
+    var index = 1;
+}
 <div class="row">
     <div class="col-md-12">
         <table class="table table-bordered table-hover">
@@ -8,10 +11,11 @@
                 <th>日期</th>
                 <th>金額</th>
             </tr>
+
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@Html.DisplayFor(x => item.Id)</td>
+                    <td>@(index++)</td>
                     <td>@Html.DisplayFor(x => item.Type)</td>
                     <td>@Html.DisplayFor(x => item.Date)</td>
                     <td>@Html.DisplayFor(x => item.Amount)</td>
